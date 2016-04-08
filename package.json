@@ -1,9 +1,11 @@
 {
   "name": "puny",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "The bantamweight JavaScript test runner with no dependencies",
   "main": "index.js",
-  "files": [ "index.js" ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "node test.js"
   },
