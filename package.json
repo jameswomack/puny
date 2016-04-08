@@ -29,6 +29,7 @@
   "bugs": {
     "url": "https://github.com/jameswomack/puny/issues"
   },
+  "tonicExample": "var run = require('puny'); run([() => [ 'When using Assert', true, 'should equal', true ]]);",
   "homepage": "https://github.com/jameswomack/puny#readme",
   "optionalDependencies": {
     "assert": "1.3.0"

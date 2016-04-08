@@ -5,7 +5,7 @@ module.exports = function run (tests, _logger) {
   var failed, logger = (_logger || console)
   Assert.ok(Array.isArray(tests) && tests.length , '`tests` must be an Array with at least one function')
 
-  tests.forEach(testLambda => { // run each test lambda to get the returned (quad|quin)tuplet
+  tests.forEach(function (testLambda) { // run each test lambda to get the returned (quad|quin)tuplet
     Assert.ok(typeof testLambda === 'function', 'Each item in `tests` must be a function')
     const test = testLambda()
     Assert.ok(Array.isArray(test) && test.length >= 4 && typeof test[0] === 'string', 'Each item in `tests` must be a function that returns a (quad|quin)tuplet containing the test title, result, assertion type, expected result and [optionally] assertion message')
